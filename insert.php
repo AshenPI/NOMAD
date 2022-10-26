@@ -4,9 +4,18 @@ include('./db_connection.php');
 $Email = $_POST['email'];
 $user = $_POST['username'];
 $pass = $_POST['passwordcheck'];
-$sql = "INSERT INTO users ( email , username , password) VALUES '($Email , $user , $pass)' ";
+//$sql = "INSERT INTO users ( email , username , password) VALUES '($Email , $user , $pass)' ";
 
 $sql="INSERT INTO users (Email,Username,Password) VALUES ('$Email','$user','$pass');";
+
+$res = mysqli_query( $conn, "SELECT * FROM users WHERE Username = '$user'");
+
+$num_rows = mysqli_num_rows($res);
+if($num_rows){
+  echo "duplicated username";
+  mysqli_close($conn);
+}
+
 if(mysqli_query($conn,  $sql)){
  ?>
 
@@ -44,7 +53,7 @@ if(mysqli_query($conn,  $sql)){
 
        <!-- Hero -->
   <div class="p-5 text-center ">
-    <h1 class="mb-3"> <span>Inserted</span> Sucessfully</h1>
+    <h1 class="mb-3"> <span>Signed up</span> Sucessfully</h1>
   </div>
     <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
@@ -64,6 +73,8 @@ if(mysqli_query($conn,  $sql)){
     echo "error" . $sql . mysqli_error($conn);
 
 }
+
+
 mysqli_close($conn);
 
 
