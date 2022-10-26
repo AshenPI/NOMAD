@@ -88,7 +88,10 @@ if(isset($_SESSION["Username"])){
           <input  name="password" required type="password" class="form-control" id="exampleInputPassword1" placeholder=<?php echo $pass ?>>
         </div> 
         <br> 
-       
+     <a class="  btn btn-danger text-white " href="./RemoveUser.php">Delete Your Account</a>
+       <br>
+       <br>
+       <br>
         <div class="row d-flex justify-content-center align-content-center  ">
             <button type="submit" class="btn  btn-outline-dark">Submit</button>
         </div>
