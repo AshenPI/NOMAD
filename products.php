@@ -133,7 +133,7 @@ $row3 = mysqli_fetch_row($select3);
               ?></li>
          
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+            <a href="#" type="button" class="gg">Sign with us</a>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -149,7 +149,7 @@ $row3 = mysqli_fetch_row($select3);
               ?></li>
             
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+            <a href="#" type="button" class="gg">Sign with us</a>
           </div>
         </div>
       </div>
