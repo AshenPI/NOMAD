@@ -12,8 +12,18 @@ $res = mysqli_query( $conn, "SELECT * FROM users WHERE Username = '$user'");
 
 $num_rows = mysqli_num_rows($res);
 if($num_rows){
-  echo "duplicated username";
   mysqli_close($conn);
+  ?>
+  
+  <script type="text/javascript">
+  alert("duplicated User");
+  window.location.href = "./Signup.php";
+
+</script>
+
+<?php
+  
+  
 }
 
 if(mysqli_query($conn,  $sql)){
