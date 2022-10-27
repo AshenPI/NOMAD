@@ -117,7 +117,7 @@ $row3 = mysqli_fetch_row($select3);
                  ?></li>
              
             </ul>
-            <a href="#" type="button" class="gg">Sign with us</a>
+            <a href="./emailsub.php" type="button" class="gg">Sign with us</a>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -133,7 +133,7 @@ $row3 = mysqli_fetch_row($select3);
               ?></li>
          
             </ul>
-            <a href="#" type="button" class="gg">Sign with us</a>
+            <a href="./emailsub.php" type="button" class="gg">Sign with us</a>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -149,7 +149,7 @@ $row3 = mysqli_fetch_row($select3);
               ?></li>
             
             </ul>
-            <a href="#" type="button" class="gg">Sign with us</a>
+            <a href="./emailsub.php" type="button" class="gg">Sign with us</a>
           </div>
         </div>
       </div>
